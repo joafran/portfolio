@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  position: relative;
+  background-color: lightblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav__container {
+  position: fixed;
+  top: 50%;
+  right: 0.5%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border-radius: 1.2em;
+  box-shadow:  10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  animation: reveal 1s linear;
+}
+
+.nav__container ul {
+    list-style: none;
+}
+
+.nav__item {
+  margin: 15px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.nav__item:hover span {
+  visibility: visible;
+  opacity: 0.7;
+  transform: translate(-18px, -50%);
+}
+
+.nav__link {
+  width: 2.5em;
+  height: 2.5em;
+  transition: opacity 0.5s, transform 0.2s;
+  position: relative;
+}
+
+.nav__link:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.span_description {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  background-color: black;
   color: white;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-family: Arial;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+  visibility: hidden;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes reveal {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  100%{
+    opacity: 1;
   }
 }

@@ -1,0 +1,29 @@
+.nav__container {
+  background: rgb(30,50,138);
+  background: linear-gradient(298deg, rgba(30,50,138,1) 0%, rgba(50,163,172,1) 96%);
+  position: fixed;
+  top: 50%;
+  right: 0.5%;
+  transform: translateY(-50%);
+  border-radius: 1.2em;
+  box-shadow:  10px 10px 42px 0px     rgba(0, 0, 0, 0.75);
+}
+
+.nav__container ul {
+    list-style: none;
+}
+
+.nav__item {
+  margin: 15px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.nav__link {
+  width: 2.5em;
+  height: 2.5em;
+  opacity: 0.2;
+  transition: opacity 0.5s, transform     0.2s;
+  position: relative;
+}
