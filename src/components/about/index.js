@@ -5,14 +5,14 @@ import welcome from '../../assets/Programming.svg'
 
 const About = () => {
     return (
-    <div id="about" className="about-page">
+    <div className="about-page">
       <div className="about__container">
         <div className="welcome__container">
           <h1><span>Hello, I'm Joaquin!</span> <br/> Welcome to my Portfolio</h1>
           <img src={svg} alt="img"/>
         </div>
 
-        <div className="about__card">
+        <div id="about" className="about__card">
           <h2>About me</h2>
             <div className="about__card__container">
               <div className="img__title">
