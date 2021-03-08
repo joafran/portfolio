@@ -1,24 +1,18 @@
 /* Contenedor principal */
 .about-page {
   width: 100%;
-  height: 150vh;
+  height: auto;
   background: lightblue;
   display: flex;
   justify-content: center;
 }
 
-.about-page h1 {
-  text-align: center;
-  padding-top: 15px;
-  margin: 25px 0;
-  color: white;
-  font-size: 30px;
-  animation: reveal 1s linear;
-}
+
 .about__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   width: 80%;
   height: 100%;
   position: relative;
@@ -40,22 +34,25 @@
 
   /* Welcome */
   .welcome__container {
-    padding: 30px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
+    padding: 10em;
     animation: reveal 1s linear;
   }
   
   .welcome__container img {
     margin:  0 30px;
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
   }
 
   .welcome__container h1 {
-    align-self: center;
-    font-weight: bold;
+      text-align: center;
+      color: white;
+      font-size: 60px;
+      animation: reveal 1s linear;
   }
 
   .welcome__container span {
@@ -64,6 +61,24 @@
     letter-spacing: 2px;
     margin: 10px;
     border-bottom: 2px solid lightgray;
+  }
+
+  @media (max-width: 950px) {
+    .welcome__container {
+      flex-direction: column;
+      align-items: center;
+      padding: 8em 0;
+    }
+
+    .welcome__container h1{
+      font-size: 40px;
+    }
+
+    .welcome__container img {
+      margin:  0 30px;
+      width: 350px;
+      height: 350px;
+    }
   }
 
   /*-------- Card About --------- */
@@ -104,7 +119,7 @@
       display: flex;
       align-items: center;
       margin: 2px;
-      padding: 20px 0;
+      padding: 1em 0;
       border-top: 6px solid lightblue;
       border-top-right-radius: 12px;
       border-top-left-radius: 12px;
@@ -114,7 +129,7 @@
   }
 
   .img__title span {
-    background-image: linear-gradient(298deg,         rgba(30,50,138,1) 0%, rgba(50,163,172,1) 96%);
+    background-image: linear-gradient(298deg,rgba(30,50,138,1) 0%, rgba(50,163,172,1) 96%);
     padding: 10px;
     border-radius: 20px;
     color: rgb(238,231,234);
@@ -145,14 +160,13 @@
     transform: scale(1.2);
   }
 
-  .about__description {
-    margin: 0 15px;
-    width: 80%;
+  .about__description p{
+    margin: 0 1em;
     align-self: flex-start;
-    line-height: 42px;
-    font-size: 25px;
-    background-image: linear-gradient(298deg,rgba(30,50,138,1) 0%, rgba(50,163,172,1) 96%);
-    padding: 15px;
+    line-height: 32px;
+    font-size: 1.5em;
+    background: #2778a8;
+    padding: .6em;
     border-radius: 20px;
     color: rgb(226, 233, 243);
     box-shadow: 0 10px 10px -5px rgba(0,0,0,.5);
@@ -160,5 +174,44 @@
   }
 
   .about__description:hover p {
-    opacity: 0.8;
+    opacity: 0.9;
+  }
+
+  @media (max-width: 900px) {
+    .about__card {
+      margin-top: 2em;
+    }
+    .about__card__container {
+      flex-direction: column;
+    }
+
+    .about__card__container img, span, p {
+      margin-bottom: 1em;
+    }
+
+  }
+
+  @media (max-width: 480px) {
+    .welcome__container {
+      padding: 12em 0;
+    }
+
+    .welcome__container h1 {
+      font-size: 20px;
+    }
+
+    .welcome__container img {
+      margin:  0 30px;
+      width: 300px;
+      height: 300px;
+    }
+
+    .img__title span {
+      font-size: 15px;
+    }
+
+    .about__description p {
+      font-size: 1em;
+      margin: 0;
+    }
   }

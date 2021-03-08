@@ -5,7 +5,7 @@ import welcome from '../../assets/Programming.svg'
 
 const About = () => {
     return (
-    <div className="about-page">
+    <div id="about" className="about-page">
       <div className="about__container">
         <div className="welcome__container">
           <h1><span>Hello, I'm Joaquin!</span> <br/> Welcome to my Portfolio</h1>
