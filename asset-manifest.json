@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.090ea0f3.chunk.css",
-    "main.js": "/portfolio/static/js/main.bdb0b31f.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.bdb0b31f.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.07ebd8a7.chunk.css",
+    "main.js": "/portfolio/static/js/main.2e332a6a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2e332a6a.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.652c680a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.652c680a.js.map",
-    "static/js/2.e1cda9ec.chunk.js": "/portfolio/static/js/2.e1cda9ec.chunk.js",
-    "static/js/2.e1cda9ec.chunk.js.map": "/portfolio/static/js/2.e1cda9ec.chunk.js.map",
+    "static/js/2.ad1e704a.chunk.js": "/portfolio/static/js/2.ad1e704a.chunk.js",
+    "static/js/2.ad1e704a.chunk.js.map": "/portfolio/static/js/2.ad1e704a.chunk.js.map",
     "static/js/3.830c9e71.chunk.js": "/portfolio/static/js/3.830c9e71.chunk.js",
     "static/js/3.830c9e71.chunk.js.map": "/portfolio/static/js/3.830c9e71.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.090ea0f3.chunk.css.map": "/portfolio/static/css/main.090ea0f3.chunk.css.map",
-    "static/js/2.e1cda9ec.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e1cda9ec.chunk.js.LICENSE.txt",
+    "static/css/main.07ebd8a7.chunk.css.map": "/portfolio/static/css/main.07ebd8a7.chunk.css.map",
+    "static/js/2.ad1e704a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ad1e704a.chunk.js.LICENSE.txt",
     "static/media/Programming.d4c190be.svg": "/portfolio/static/media/Programming.d4c190be.svg",
     "static/media/about-img.d7086c29.svg": "/portfolio/static/media/about-img.d7086c29.svg",
-    "static/media/code-typing-contactme.f0ec30ab.svg": "/portfolio/static/media/code-typing-contactme.f0ec30ab.svg",
     "static/media/dubsnip.1ae6d94b.png": "/portfolio/static/media/dubsnip.1ae6d94b.png",
     "static/media/integrAR-screen.80aa0fe4.png": "/portfolio/static/media/integrAR-screen.80aa0fe4.png",
     "static/media/website-creator-illustration.e098ef1c.svg": "/portfolio/static/media/website-creator-illustration.e098ef1c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.652c680a.js",
-    "static/js/2.e1cda9ec.chunk.js",
-    "static/css/main.090ea0f3.chunk.css",
-    "static/js/main.bdb0b31f.chunk.js"
+    "static/js/2.ad1e704a.chunk.js",
+    "static/css/main.07ebd8a7.chunk.css",
+    "static/js/main.2e332a6a.chunk.js"
   ]
 }
