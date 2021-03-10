@@ -4,11 +4,12 @@ import dubsnip from '../../assets/dubsnip.png'
 import integrAR from '../../assets/integrAR-screen.png'
 import Tilt from 'react-parallax-tilt'
 
-const Projects = () => {
+const Projects = ({lang}) => {
+   
     return (
         <div id="projects" className="projects-page">
             <div className="projects-container">
-                <h2><span>{'</>'}</span> Projects</h2>
+                <h2><span>{'</>'}</span> {lang ? 'Proyectos' : 'Projects'}</h2>
 
                 <div className="project-card-container">
                     <Tilt>
@@ -17,10 +18,10 @@ const Projects = () => {
                             <div className="project-card-body">
                                 <div className="project-card-technologies">
                                     <img src={dubsnip} alt="dubsnip"/>
-                                <p>An e-commerce of the bootcamp "soyHenry" made with a team of 5 members using SCRUM methodology.<br/>
-                                <a href="https://dubsnip.vercel.app">See the page</a></p>
+                                <p>{lang ? `Un e-commerce de instrumentos musicales del bootcamp "soyHenry" hecho con un equipo de 5 integrantes usando la metodologia SCRUM.` : `An e-commerce of musical intruments of the bootcamp "soyHenry" made with a team of 5 members using SCRUM methodology`}.<br/>
+                                <a href="https://dubsnip.vercel.app">{lang ? 'Ver Pagina' : 'See the page'}</a></p>
                                 </div>
-                                    <p><span>Technologies:</span> React-Redux, Node-Express, PostgreSQL-Sequelize.</p>
+                                    <p><span>{lang ? 'Tecnologias' : 'Technologies'}:</span> React-Redux, Node-Express, PostgreSQL-Sequelize.</p>
                             </div>
                         </div>
                     </Tilt>
@@ -31,12 +32,13 @@ const Projects = () => {
                             <div className="project-card-body">
                                 <div className="project-card-technologies">
                                 <img src={integrAR} alt="integrAR"/>
-                                    <p>The final project of the "soyHenry" bootcamp, 
+                                    <p>
+                                        {lang ? `Proyecto Final del bootcamp soyHenry, una aplicación móvil que simula una institucion educativa, específicamente una escuela secundaria.` : `The final project of the "soyHenry" bootcamp, 
                                         a mobile app that simulates an educational institution,
-                                        specifically a high school.<br/> <a href="dubsnip.vercel.app">See the code</a>
+                                        specifically a high school.`}
                                     </p>
                                 </div>
-                                    <p><span>Technologies:</span> GraphQL, React Native, MongoDB</p>
+                                    <p><span>{lang ? 'Tecnologias' : 'Technologies'}:</span> GraphQL, React Native, MongoDB</p>
                             </div>
                         </div>
                     </Tilt>

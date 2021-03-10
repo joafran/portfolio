@@ -3,7 +3,7 @@ import '../../styles/skills.css';
 import webCreator from '../../assets/website-creator-illustration.svg';
 import icons from './icons'
 
-const Skills = () => {
+const Skills = ({lang}) => {
 
     const [toggleState, setToggleState] = useState(1);
     const toggleTab = (index) => {
@@ -15,7 +15,7 @@ const Skills = () => {
             <div className="skills__container">
                 <div className="skills__header">
                     <img src={webCreator}/>
-                    <h2>I have knowledge in...</h2>
+                    <h2>{lang ? 'Tengo conocimientos en...' : 'I have knowledge in...'}</h2>
                 </div>
                 <div className="tab-container">
                     <div className="bloc-tabs">
@@ -29,13 +29,13 @@ const Skills = () => {
                         className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(2)}
                         >
-                        Tools
+                        {lang ? 'Herramientas' : 'Tools'}
                         </button>
                         <button
                         className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(3)}
                         >
-                        In progress
+                        {lang ? 'En progreso' : 'In progress'}
                         </button>
                         
                     </div>

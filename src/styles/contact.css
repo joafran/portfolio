@@ -63,11 +63,8 @@
         font-size: 2em;
     }
 
-      .contact-links {
-          flex-direction: column;
-      }
       .contact-icon {
-        width: 80px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
       }
   }

@@ -2,7 +2,6 @@
 .about-page {
   width: 100%;
   height: auto;
-  background: lightblue;
   display: flex;
   justify-content: center;
 }
@@ -51,7 +50,7 @@
   .welcome__container h1 {
       text-align: center;
       color: white;
-      font-size: 60px;
+      font-size: 40px;
       animation: reveal 1s linear;
   }
 

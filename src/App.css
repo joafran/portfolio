@@ -72,6 +72,22 @@ html {
   visibility: hidden;
 }
 
+.switch-lang {
+  cursor: pointer;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 1em;
+  background: #00acee;
+  color: white;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.switch-lang:hover {
+  transform: scale(1.2);
+  background: white;
+  color: #00acee;
+}
+
 @media (max-width: 600px) {
   .nav__container {
     border-radius: .8em;
@@ -94,6 +110,11 @@ html {
     border-radius: 2px;
     padding: 5px 8px;
     font-size: 10px;
+  }
+
+  .switch-lang {
+    width: 2.3em;
+    height: 2.3em;
   }
 }
 
