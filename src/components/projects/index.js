@@ -18,7 +18,7 @@ const Projects = ({lang}) => {
                             <div className="project-card-body">
                                 <div className="project-card-technologies">
                                     <img src={dubsnip} alt="dubsnip"/>
-                                <p>{lang ? `Un e-commerce de instrumentos musicales del bootcamp "soyHenry" hecho con un equipo de 5 integrantes usando la metodologia SCRUM.` : `An e-commerce of musical intruments of the bootcamp "soyHenry" made with a team of 5 members using SCRUM methodology`}.<br/>
+                                <p>{lang ? `Un e-commerce de instrumentos musicales del bootcamp "soyHenry" hecho con un equipo de 5 integrantes usando la metodologia SCRUM` : `An e-commerce of musical intruments of the bootcamp "soyHenry" made with a team of 5 members using SCRUM methodology`}.<br/>
                                 <a href="https://dubsnip.vercel.app">{lang ? 'Ver Pagina' : 'See the page'}</a></p>
                                 </div>
                                     <p><span>{lang ? 'Tecnologias' : 'Technologies'}:</span> React-Redux, Node-Express, PostgreSQL-Sequelize.</p>

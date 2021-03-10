@@ -9,7 +9,7 @@ const About = ({lang}) => {
       <div className="about__container">
         <div className="welcome__container">
           {lang ? (
-          <h1><span>Hola, soy Joaquin!</span> <br/> Bienvenido a mi Portafolio</h1>) 
+          <h1><span>Hola, soy Joaquin!</span> <br/> Bienvenido a mi Portfolio</h1>) 
           : (<h1><span>Hello, I'm Joaquin!</span> <br/> Welcome to my Portfolio</h1>
           )}
           
